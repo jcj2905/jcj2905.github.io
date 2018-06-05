@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>UX Portfolio: JJin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="UX portfolio designed to showcase personal projects ">
+	<meta name="author" content="Justin Jin">
+	
+    <!-- CSS / Fonts / Icons -->
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="mobile.css">
+    
+    <!-- JavaScript /jQuery -->
+    <script src="jquery-2.0.3.min.js"></script>
+    <script src="jquery.stellar.min.js"></script>
+    <script src="parallax.js"></script>
+    <script src="waypoints.min.js"></script>
+	<script>
+	 $(function(){
+	 	$('.work-history').hide();
+	 	
+	  	$('.locked').hover(function(){
+	  		$(this).addClass('animated swing');
+	  		}, function() {
+	  			$(this).removeClass('animated swing');
+	  	});
+	 
+	  	$('.locked').click(function(e){
+		 	e.preventDefault();
+		});
+		
+		$('.huge-icon').waypoint(function() {
+			$(this).addClass('animated rollIn');
+			}, { offset: 400 });
+			
+		$('.cover').waypoint(function() {
+			$(this).addClass('animated wipe');
+			}, { offset: 400 });
+	  });
+	</script>
+    
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!--[if IE 7]> <html class="ie7"> <![endif]-->  
+    <!--[if IE 8]> <html class="ie8"> <![endif]-->  
+
+</head>
+<body>
+
+<header  class="dark">
+	<div class="container">
+		<div class="introduction">
+			<span class="animated fadeIn author-name">Justin Jin</span>
+			<h1 class="author-title animated fadeInDown">Project Portfolio</h1>
+			<p class="author-summary animated fadeInUp">Welcome to my Online Portfolio, the purpose of this website is to showcase a couple of projects that I have been working on for the past year. These projects aim to highlight the specific UX processes of Mobile and Web Development.</p>
+		</div>
+	</div>
+</header>
+
+
+
+<section class="dark home">
+	<div class="container">
+				<u><h3 class="title-section">UX/UI Projects</h3></u>
+	</div>
+	<ul class="projects">
+	
+		<li>
+                <div class="project theme_blue">
+                    <div class="project-hd">
+                        <div class="project-hd-content">
+                            <div class="project-hd-content-bg"></div>
+                            <div class="project-hd-content-icon">
+                                <span class="icon icon_barkpark">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-bd">
+                        <h2 class="project-name">TAMU Wayfinding</h2>
+                        <p>This mobile application makes it easier for students and visitors on campus to find their way around using the Texas A&M Bus Transportation System. This application hopes to improve travel time as well as decrease stress in finding new places on campus. </div>
+                    <div class="project-ft">
+                        <a href="tamuwayfinding.html" class="btn">View Project</a>
+                    </div>
+                </div>
+            </li> 
+		<li>
+                <div class="project theme_teal">
+                    <div class="project-hd project-hd_reverse">
+                        <div class="project-hd-content">
+                            <div class="project-hd-content-bg"></div>
+                            <div class="project-hd-content-icon">
+                                <span class="icon icon_sps">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-bd">
+                        <h2 class="project-name">Smart Glucose</h2>
+                        <p>Smart Glucose is an Mobile Application which allows users to monitor their glucose levels with data visualization. Users can also input food for nutritional information. This application aims to educate diabetic users on their daily glucose intake.</div>
+                    <div class="project-ft">
+                        <span class="btn disabled">In Progress</span>
+                    </div>
+                </div>
+            </li> 
+			
+					<li>
+                <div class="project theme_red">
+                    <div class="project-hd">
+                        <div class="project-hd-content">
+                            <div class="project-hd-content-bg"></div>
+                            <div class="project-hd-content-icon">
+                                <span class="icon icon_tv">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-bd">
+                        <h2 class="project-name">Mashed News</h2>
+                        <p>This is an ongoing project which collects multiple different news sources and pulls news articles from each source. The application then should perform Sentiment Analysis and TF-IDF to determine potential biases between sources. </div>
+                    <div class="project-ft">
+                        <span class="btn disabled">In Progress</span>
+                    </div>
+                </div>
+            </li> 
+		<li>
+		
+        </ul>   
+		
+
+		
+
+
+
+		
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48662923-1', 'harkmylord.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
