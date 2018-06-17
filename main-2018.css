@@ -282,6 +282,38 @@ section {
 
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.imgContainer{
+    float:left;
+}
+
 .split-container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -794,6 +826,14 @@ section {
 		width: 960px;
 		margin: 0 auto;
 		padding: 0;
+	}
+	
+	.column-test {
+		width: 960px;
+		margin: 0 auto;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.column-item {
