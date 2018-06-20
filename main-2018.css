@@ -1092,6 +1092,15 @@ section {
 		padding: 0px;
 	}
 	
+	.mast-glucose {
+	  background-image: url('/assets/images/barkpark/bg-mast-barkpark-desktop.png');
+	  background-size: cover;
+		background-repeat: no-repeat;
+		background-position: unset;
+	  background-color: #F6F9FE;
+		padding: 0px;
+	}
+	
 	
 	
 
